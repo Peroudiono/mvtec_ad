@@ -1,0 +1,145 @@
+{
+  "resnet_image_level": {
+    "tau_F1": 0.8200000000000001,
+    "tau_safe": 0.023
+  },
+  "ad_mahalanobis": {
+    "bottle": {
+      "tau_F1": 32.04131840277652,
+      "tau_F2": 24.861816682001834,
+      "tau_safe": 24.861816682001834,
+      "prec_safe": 0.9402985074626866,
+      "recall_safe": 1.0
+    },
+    "cable": {
+      "tau_F1": 22.489762399576815,
+      "tau_F2": 18.284674588909656,
+      "tau_safe": 18.284674588909656,
+      "prec_safe": 0.6814814814814815,
+      "recall_safe": 1.0
+    },
+    "capsule": {
+      "tau_F1": 19.341192442551282,
+      "tau_F2": 19.341192442551282,
+      "tau_safe": 19.341192442551282,
+      "prec_safe": 0.872,
+      "recall_safe": 1.0
+    },
+    "carpet": {
+      "tau_F1": 32.802172875020844,
+      "tau_F2": 23.721512236601317,
+      "tau_safe": 23.721512236601317,
+      "prec_safe": 0.7606837606837606,
+      "recall_safe": 1.0
+    },
+    "grid": {
+      "tau_F1": 17.01812867075969,
+      "tau_F2": 17.01812867075969,
+      "tau_safe": 17.01812867075969,
+      "prec_safe": 0.7307692307692307,
+      "recall_safe": 1.0
+    },
+    "hazelnut": {
+      "tau_F1": 49.73984287935478,
+      "tau_F2": 44.90721658119702,
+      "tau_safe": 40.88002799939888,
+      "prec_safe": 0.7865168539325843,
+      "recall_safe": 1.0
+    },
+    "leather": {
+      "tau_F1": 34.65812807665385,
+      "tau_F2": 31.070109026949947,
+      "tau_safe": 27.48208997724604,
+      "prec_safe": 0.8214285714285714,
+      "recall_safe": 1.0
+    },
+    "metal_nut": {
+      "tau_F1": 20.349245938868982,
+      "tau_F2": 20.165996850660118,
+      "tau_safe": 20.165996850660118,
+      "prec_safe": 0.9029126213592233,
+      "recall_safe": 1.0
+    },
+    "pill": {
+      "tau_F1": 23.869418062405302,
+      "tau_F2": 19.386348651685275,
+      "tau_safe": 19.386348651685275,
+      "prec_safe": 0.8493975903614458,
+      "recall_safe": 1.0
+    },
+    "screw": {
+      "tau_F1": 29.30271042104333,
+      "tau_F2": 25.333640934458575,
+      "tau_safe": 25.333640934458575,
+      "prec_safe": 0.74375,
+      "recall_safe": 1.0
+    },
+    "tile": {
+      "tau_F1": 26.739869475366746,
+      "tau_F2": 26.739869475366746,
+      "tau_safe": 19.477031034177198,
+      "prec_safe": 0.7636363636363637,
+      "recall_safe": 1.0
+    },
+    "toothbrush": {
+      "tau_F1": 7.383399971151544,
+      "tau_F2": 7.383399971151544,
+      "tau_safe": 7.383399971151544,
+      "prec_safe": 0.9090909090909091,
+      "recall_safe": 1.0
+    },
+    "transistor": {
+      "tau_F1": 21.05245999403956,
+      "tau_F2": 21.05245999403956,
+      "tau_safe": 17.372243047181826,
+      "prec_safe": 0.45977011494252873,
+      "recall_safe": 1.0
+    },
+    "wood": {
+      "tau_F1": 45.873716503975544,
+      "tau_F2": 28.664654506855648,
+      "tau_safe": 28.664654506855648,
+      "prec_safe": 0.8,
+      "recall_safe": 1.0
+    },
+    "zipper": {
+      "tau_F1": 26.418734792394844,
+      "tau_F2": 23.794852342696075,
+      "tau_safe": 19.596640423178048,
+      "prec_safe": 0.7986577181208053,
+      "recall_safe": 1.0
+    }
+  },
+  "policies": {
+    "SAFE_0FN": {
+      "type": "AD_SAFE_ONLY"
+    },
+    "INDUSTRIAL_BALANCED": {
+      "type": "MIXED",
+      "strong_cats": [
+        "bottle",
+        "metal_nut",
+        "toothbrush"
+      ],
+      "tau_stage2": 0.6
+    },
+    "PRECISION": {
+      "type": "AND_F1"
+    },
+    "INDUSTRIAL_SAFE_0FN": {
+      "type": "MIXED_V2",
+      "strong_cats": [
+        "bottle",
+        "metal_nut",
+        "toothbrush"
+      ],
+      "critical_cats": [
+        "wood",
+        "transistor",
+        "tile",
+        "carpet"
+      ],
+      "tau_stage2": 0.6
+    }
+  }
+}

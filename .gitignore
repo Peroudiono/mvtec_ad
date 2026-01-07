@@ -1,0 +1,17 @@
+.venv/
+data/
+runs/
+__pycache__/
+*.log
+
+# poids / modèles (souvent lourds)
+*.pt
+*.pth
+*.onnx
+*.ckpt
+
+# notebooks outputs
+.ipynb_checkpoints/
+yolo_mvtec_all/
+_yolo_mvtec_all_local/
+
