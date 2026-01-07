@@ -114,7 +114,10 @@ Tu peux garder la structure originale MVTec et pointer le chemin racine dans tes
 
 ---
 
-## Notebooks (pipeline recommandé)
+## Notebooks
+
+<img width="1523" height="717" alt="archi (1)" src="https://github.com/user-attachments/assets/12f2c39f-48e1-4090-9363-6b6f722a8114" />
+
 
 Les notebooks sont organisés de façon progressive (les noms peuvent varier selon ta version, mais la logique reste la même) :
 
@@ -148,7 +151,7 @@ Les notebooks sont organisés de façon progressive (les noms peuvent varier sel
 
 ---
 
-## 🔍 Anomaly Detection (Mahalanobis) — ce que ça fait
+## Anomaly Detection (Mahalanobis) — ce que ça fait
 
 Pour une catégorie donnée :
 1. On extrait des features `φ(x) ∈ R^512` pour les images **good** du train.
