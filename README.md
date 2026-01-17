@@ -257,5 +257,4 @@ Le projet met volontairement en avant l’idée :
 
 ## Auteur / Contact
 
-- GitHub : `Matheux14`
 - Projet : pipeline détection d’anomalies industrielles (MVTec AD)
