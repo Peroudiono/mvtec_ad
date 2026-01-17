@@ -234,7 +234,7 @@ Le projet met volontairement en avant l’idée :
 
 ---
 
-## Roadmap (idées d’amélioration)
+## Roadmap
 
 - Pixel-level AD : PatchCore / PaDiM / DRAEM (localisation fine)
 - Calibration probabiliste : temperature scaling / isotonic
@@ -255,6 +255,7 @@ Le projet met volontairement en avant l’idée :
 
 ---
 
-## Auteur / Contact
+## Auteur
 
+- Kouadio Konan, Diono Dit Boubacar Perou, SIE Hans Ouattara
 - Projet : pipeline détection d’anomalies industrielles (MVTec AD)
